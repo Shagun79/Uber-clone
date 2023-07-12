@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <h2 id="myFirstHead">My first Game</h2>
+    <button id="enterGame" onclick="fone()">ENTER INTO GAME</button>
+    <div class="ib">
+      <input type="text" id="name" placeholder="enter your name" required />
+      <button id="btn1" onclick="nameuser()">Continue</button>
+    </div>
+
+    <h1 id="welcome"></h1>
+    <div id="age">
+      <input type="text" id="ageGiven" placeholder="enter your age" required />
+      <button id="btn2" onclick="ageuser()">Continue</button>
+    </div>
+    <h2 id="ageEntered"></h2>
+
+    <script>
+      function fone() {
+        document.getElementById("name").style.display = "block";
+        document.getElementById("btn1").style.display = "block";
+      }
+      function nameuser() {
+        let userinput = document.getElementById("name").value;
+
+        if (userinput == "") {
+          document.getElementById("welcome").innerHTML =
+            "Enter your Name here first to continue";
+        } else {
+          document.getElementById("welcome").innerHTML =
+            "hellow " + userinput + " Welcome to level One";
+          document.getElementById("ageGiven").style.display = "block";
+          document.getElementById("btn2").style.display = "block";
+        }
+      }
+      function ageuser() {
+        let age= document.getElementById('ageGiven').value
+
+        if (age > 18 && age<=100) {
+          document.getElementById("ageEntered").innerHTML =
+            "You can play this game";
+        }
+        else if( age=="" ){ 
+          document.getElementById("ageEntered").innerHTML = "Please ENTER Your Age"
+          
+
+        }
+        else if(age<0 || age>100  ){
+          document.getElementById("ageEntered").innerHTML = "Please ENTER valid age"
+
+        }
+          
+         else {
+          document.getElementById("ageEntered").innerHTML =
+            "You can not play this game";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Current Date and Time</title>
+  </head>
+  <body>
+    <h1>Current Date and Time through Javascript DATE</h1>
+    <h2 id="output"></h2>
+    <script>
+      let date = new Date();
+      let weeks = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Friday",
+        "Saturday",
+        "Sunday",
+      ];
+      let day = weeks[date.getDay()];
+      let hour = date.getHours();
+
+      let ampm = hour >= 12 ? "PM" : "AM";
+      let newHour = hour >= 12 ? hour - 12 : hour;
+
+      document.getElementById("output").innerHTML =
+        "Today is  " +
+        day +
+        " and Time is " +
+        newHour +
+          ":"   +
+        date.getMinutes() +
+           ":"  +
+        date.getSeconds()  +
+        
+ 
+        ampm 
+        +
+        ":" 
+       
+
+      //  document.write(day);
+      //  let time=  date.getTime();
+      //      document.write("TODAYS  IS" +  day+ time);
+    </script>
+  </body>
+</html>

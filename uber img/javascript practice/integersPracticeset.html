@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      input {
+        background-color: grey;
+        height: 30px;
+        color: aqua;
+        border-radius: 10px;
+        border: none;
+        text-align: center;
+      }
+      button {
+        background-color: aquamarine;
+        color: black;
+        border-radius: 12px;
+        padding: 10px 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>
+      Question: Write a JavaScript program to compute the sum of the two given
+      integers. If the two values are the same, then return triple their sum.
+    </h2>
+    <input type="number" id="one" />
+    <input type="number" id="two" />
+    <button onclick="sum()">Click</button>
+    <h2 id="output"></h2>
+
+    <script>
+      function sum() {
+        let value1 = document.getElementById("one").value;
+        let newvalue1 = Number(value1);
+
+        let value2 = document.getElementById("two").value;
+        let newvalue2 = Number(value2);
+        if (newvalue1 == newvalue2) {
+          let triple = newvalue1 + newvalue2 +  newvalue1 + newvalue2 +  newvalue1 + newvalue2;
+
+          document.getElementById("output").innerHTML = triple;
+        } else {
+          let sum = newvalue1 + newvalue2;
+          document.getElementById("output").innerHTML = sum;
+        }
+      }
+    </script>
+  </body>
+</html>

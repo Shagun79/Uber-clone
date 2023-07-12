@@ -1,0 +1,48 @@
+#name{ display: none;
+    margin: auto;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+   
+
+.ib{
+    display: flex;
+    margin-left: 450px;
+    margin-top: 20px
+
+}
+#age{
+    display: flex;
+}
+#btn1{
+    margin:  0px ;
+    margin-left: 15px;
+    display: none;  
+}
+#btn2{
+    display: none;
+    margin-left: 15px;
+   
+}
+#ageGiven{
+    margin-left: 440px;
+    display: none;
+
+}
+#ageEntered{
+    text-align: center;
+}
+
+#myFirstHead{
+    color: purple;
+    text-align: center;
+}
+#enterGame{
+     display: flex; 
+   margin: auto;
+}
+#welcome{
+    text-align: center;
+}

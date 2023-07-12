@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <input type="text" id="userinput" />
+  <button onclick="table()">SUBMIT</button>
+
+  <body>
+    <script>
+     
+      function table() {
+        var userinputnext = document.getElementById("userinput").value;
+        for (a = 1; a <= 10; a++) {
+          document.write(userinputnext + "x" + a + "=" + userinputnext * a);
+          document.write("<br>");
+        }
+      }
+    </script>
+  </body>
+</html>

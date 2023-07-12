@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Current Date</title>
+</head>
+<body>
+      <h1 id="value"></h1>
+      <h1 id="output"></h1>
+    <script>
+                  let fulldate= new Date();
+                    let date =  fulldate.getDate();
+                    let month=   fulldate.getMonth() + 1;
+                    let year=    fulldate.getFullYear();
+               if (month<10) {
+                   month= "0" + month ; 
+               }
+               else {
+                month;
+               }
+               if(date < 10){
+                  date=   "0"+ date;
+               }
+               else {
+                date;
+               }
+        document.getElementById('value').innerHTML= date + "/"+ month + "/" +  year;
+        document.getElementById('output').innerHTML= date + "-"+ month + "-" +  year;
+    </script>
+</body>
+</html>

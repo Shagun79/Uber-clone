@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2> Question:
+        Write a JavaScript program to get all the elements of an array  
+         nexcept the last one.
+    </h2>
+</head>
+  <button id="btn" onclick="array()"> Click to get</button>
+        
+<body>
+     <script>
+           let elements= ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h' ];
+           function array(){
+                    for(i=0; i<elements.length; i++){
+                        console.log(elements[i]);
+                         
+                        
+
+                    }
+                    elements.pop();
+                     
+                              
+           } 
+
+              
+     </script>
+</body>
+</html>

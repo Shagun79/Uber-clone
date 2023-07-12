@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+   
+<body>
+         <h2>  Question:  Write a JavaScript program to check 
+             if the given number falls within the given range.
+        </h2>
+       
+
+    <input type="text" placeholder="write a number" id="number">
+    <input type="text" placeholder="write your range" id="range" >
+    <button onclick="check()"> Click Here</button>
+    <h1 id="value"> </h1>
+      <script>
+         function check(){
+            let x= document.getElementById('number').value;
+            let y= document.getElementById('range').value;
+               if (x<y){
+                document.getElementById('value').innerHTML= "yes  " + x + " falls " + "in the range of"  + y;
+               }
+               else{
+                document.getElementById('value').innerHTML= "No " + x + " didn't falls " + " in the range of " + y;
+               }
+         }
+      </script>
+</body>
+</html>

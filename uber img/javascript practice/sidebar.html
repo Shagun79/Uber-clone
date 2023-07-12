@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="sidebar.css" />
+  </head>
+  <body>
+   
+     <img src="/menu icon.png"   id="myimg" alt="" width="50px "   onclick="opennav()">
+   
+
+    <div  id="mysidebar">
+
+      <a href="#"  onclick="closenav()" id="closebutton" > x</a>
+
+      <div class="links">
+
+        <a href=""> About</a> <br />
+        <br />
+        <br />
+        <a href="" class="Services"> Services</a> <br />
+        <br />
+        <br />
+        <a href=""> Clients</a> <br />
+        <br />
+        <br />
+
+        <a href=""> Contact</a> <br />
+        <br />
+        <br />
+      </div>
+    </div>
+
+    <script>
+      function opennav() {
+        document.getElementById("mysidebar").style.display="block";
+        document.getElementById("myimg").style.display="none";
+
+
+      }
+      function closenav(){
+        document.getElementById("mysidebar").style.display="none";
+        document.getElementById("myimg").style.display="block";
+
+
+      }
+    </script>
+  </body>
+</html>

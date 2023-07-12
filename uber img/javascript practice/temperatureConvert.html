@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="temperature.css" />
+  </head>
+
+  <body>
+    <div class="box">
+      <h2>Temperature Converter</h2>
+      <div class="content">
+        <label for=""> Celsius</label> <br />
+        <input type="text" id="cel" value="0"  /> <br />
+        <label for=""> Farenheit</label> <br />
+        <input type="text" name="" id="faren" value="32" />
+      </div>
+    </div>
+    <script>
+              let celsius=  document.getElementById('cel');
+
+              let Farenheit=  document.getElementById('faren');   
+                celsius.addEventListener('input', function(){
+                           let c = this.value;
+                             let f=  (c* 9/5) + 32;
+                             faren.value=f;
+                     
+
+                });
+                Farenheit.addEventListener('input', function(){
+                      let f= this.value;
+                       let c= (f-32)*5/9;
+                        cel.value= c;
+                } )
+
+                   
+
+
+
+
+    </script>
+  </body>
+</html>

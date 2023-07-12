@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="uber.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    />
+  </head>
+
+  <body>
+    <div id="uber">
+      <div class="navBar">
+        <ul>
+          <h2 class="uberLogo">
+            <img src="/uber img/uber main logo.png" alt="" />
+          </h2>
+          <li>
+            <div class="dropdown">
+              <button class="dropbtn">
+                Company
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="#">About us</a>
+                <a href="#">Our offerings</a>
+                <a href="#">How Uber works</a>
+                <a href="#">Global Citizenship</a>
+                <a href="#"> Newsroom</a>
+                <a href="#"> Investor relations </a>
+                <a href="#"> Blog </a>
+                <a href="#"> Careers </a>
+              </div>
+            </div>
+          </li>
+          <li>Safety</li>
+          <li>Help</li>
+          <li class="eN">EN</li>
+          <li>Products</li>
+          <li onclick="loginpage()">Log in</li>
+
+          <div class="box" id="b">
+            <img
+              src="/uber img/cross icon.png"
+              alt=""
+              width="30px"
+              height="30px"
+              style="margin-top: 47px; margin-left: 935px"
+              onclick="closeloginpage()"
+            />
+            <div class="main">
+              <div class="pageTop">
+                <div class="left">
+                  <h1>Sign in to driver and deliver</h1>
+                  <div class="icon">
+                    <img
+                      src="/uber img/icons8-arrow-30.png"
+                      alt=""
+                      class="Firstarrow"
+                      style="margin-left: 55px; margin-top: 25px"
+                      onclick="loginformpage()"
+                    />
+                  </div>
+                </div>
+                <div class="right">
+                  <h1>Sign to ride</h1>
+
+                  <div class="icon">
+                    <img
+                      src="/uber img/icons8-arrow-30.png"
+                      alt=""
+                      class="arrow"
+                      style="margin-left: 55px"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              <div class="pageBottom">
+                <div class="leftBottom">
+                  <h1>
+                    Sign to order delivery with <br />
+                    Uber Eats
+                  </h1>
+                  <div class="icon">
+                    <img
+                      src="/uber img/icons8-arrow-30.png"
+                      alt=""
+                      class="arrow"
+                      style="margin-left: 55px"
+                    />
+                  </div>
+                </div>
+                <div class="rightBottom">
+                  <h1>
+                    Sign to Your Uber for <br />
+                    Business Account
+                  </h1>
+                  <div class="icon">
+                    <img
+                      src="/uber img/icons8-arrow-30.png"
+                      alt=""
+                      class="arrow"
+                      style="margin-left: 45px"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <li class="sign_up"><button>Sign up</button></li>
+        </ul>
+      </div>
+      <div class="headPage" id="head">
+        <img src="/uber img/background top.webp" alt="" class="mainPageIMG" />
+        <div class="requestNow">
+          <div class="row">
+            <div class="car">
+              <img src="/uber img/car-front-outlined.svg" alt="" />
+              <h4>Ride</h4>
+            </div>
+
+            <div class="Driver">
+              <img src="/uber img/Earn-filled.svg" alt="" />
+              <h4>
+                Drive or <br />
+                Deliver
+              </h4>
+            </div>
+            <div class="Rent">
+              <img src="/uber img/keys_car_filled.svg" alt="" />
+              <h4>
+                Rent your <br />
+                fleet
+              </h4>
+            </div>
+          </div>
+
+          <h1 class="rideNow">Request a ride now</h1>
+
+          <input
+            type="text"
+            name=""
+            id="pickup"
+            placeholder="Enter pickup location"
+          />
+          <br />
+          <br />
+          <input
+            type="text"
+            name=""
+            id="destination"
+            placeholder="Enter destination"
+          />
+          <button
+            style="
+              padding: 10px 15px;
+              border-radius: 5px;
+              color: white;
+              background-color: black;
+              margin-left: 35px;
+              margin-top: 27px;
+            "
+          >
+            Request now
+          </button>
+          <button class="ScheduleLater">Schedule for later</button>
+        </div>
+      </div>
+
+      <div class="boxNext">
+        <img src="/uber img/buliding img.webp" alt="" class="buildingBack" />
+        <h1 class="uber">The Uber you know, reimagined for business</h1>
+        <h3>
+          A platform for managing global rides and meals, and local deliveries,
+          for companies of any size.
+        </h3>
+        <button
+          style="
+            padding: 10px 20px;
+            border-radius: 6px;
+            color: white;
+            background-color: black;
+            margin-left: 92px;
+            margin-top: 27px;
+          "
+        >
+          Get Started
+        </button>
+      </div>
+      <div class="rideWITHauto">
+        <h1 class="ride">Ride with Uber</h1>
+        <div class="rideBoxes">
+          <div class="leftRide">
+            <div class="AUTO">
+              <div class="autoImg">
+                <img src="/uber img/auto img.webp" alt="" class="auto" />
+              </div>
+              <div class="content">
+                <h2>Uber Auto</h2>
+                <h5>
+                  <br />
+                  Get affordable Uber Auto rides witn no haggling. Request Uber
+                  Auto and ride <br />
+                  comfortably around your city.
+                </h5>
+              </div>
+              <div class="icon">
+                <img src="/uber img/icons8-arrow-30.png" alt="" class="arrow" />
+              </div>
+            </div>
+            <div class="uberRentals">
+              <div class="autoImg">
+                <img src="/uber img/uber rentals.webp" alt="" class="auto" />
+              </div>
+              <div class="RentalsContent">
+                <h2 style="margin-left: 20px">Uber Rentals</h2>
+                <h5 style="margin-left: 20px; margin-top: -15px; padding: 0px">
+                  Book Rentals to save time with one car <br />
+                  and driver for your multi-stop trips
+                </h5>
+              </div>
+              <div class="icon">
+                <img
+                  src="/uber img/icons8-arrow-30.png"
+                  alt=""
+                  class="arrow"
+                  style="margin-left: 55px"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="rightRide">
+            <div class="uberMoto">
+              <div class="autoImg">
+                <img src="/uber img/moto.webp" alt="" class="auto" />
+              </div>
+              <div class="content">
+                <h2>Uber Moto</h2>
+                <h5>
+                  <br />
+                  Get affordable Bikr rides at your doorsteps. <br />
+                  Skip the crowd and zip through traffic <br />with Uber Moto.
+                </h5>
+              </div>
+              <div class="icon">
+                <img src="/uber img/icons8-arrow-30.png" alt="" class="arrow" />
+              </div>
+            </div>
+            <div class="uberIntercity">
+              <div class="autoImg">
+                <img src="/uber img/uber security.webp" alt="" class="auto" />
+              </div>
+              <div class="content">
+                <h2>Uber Intercity</h2>
+                <h5>
+                  <br />
+                  Book Intercity to head outstation anytime <br />
+                  in convinient and affordable cars.
+                </h5>
+              </div>
+              <div class="icon">
+                <img src="/uber img/icons8-arrow-30.png" alt="" class="arrow" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="focusSafety">
+        <h2 class="safetyP">Focused on safety, wherever you go</h2>
+        <div class="focusedBoxes">
+          <div class="leftFocused">
+            <div>
+              <img
+                src="/uber img/our community to.webp"
+                alt=""
+                class="manMask"
+              />
+            </div>
+            <h4 class="commit">Our commitment to your safety</h4>
+            <p class="leftFocusPara">
+              With every safety feature and every standard in our Community
+              Guidelines, <br />
+              we're committed to helping to create a safe environment for our
+              users.
+            </p>
+            <div class="nextRow">
+              <p class="top"><b> Read about our Community Guidelines </b></p>
+              <p class="one"><b> See all safety features</b></p>
+              <p></p>
+            </div>
+          </div>
+          <div class="rightFocused">
+            <div>
+              <img src="/uber img/car traffic.webp" alt="" class="carTraffic" />
+            </div>
+            <h4 class="setting">Setting 10,000+ cities in motion</h4>
+            <p class="rightFocusedPara">
+              The app is available in thousands of cities worldwide, so you can
+              <br />
+              request a ride even when you're far from home.
+            </p>
+            <div class="Rowright">
+              <p><b> Read about our Community Guidelines </b></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="aboutNewsRoom">
+        <div class="about">
+          <img src="/uber img/about.svg" alt="" width="30px" height="30px" />
+          <h3>About us</h3>
+          <p class="aboutMain">
+            Find out how we started, what drives us, and how we’re reimagining
+            how the world moves.
+          </p>
+
+          <p class="aboutP" onclick="opensignup()">Learn more about Uber</p>
+        </div>
+
+        <div class="newsRoom">
+          <img src="/uber img/newsroom.svg" alt="" width="30px" height="30px" />
+          <h3>Newsroom</h3>
+          <p class="newsMain">
+            See announcements about our latest releases, initiatives, and
+            partnerships.
+          </p>
+
+          <p class="newsP">Go to Newsroom.</p>
+        </div>
+        <div class="global">
+          <img src="/uber img/global.svg" alt="" width="30px" height="30px" />
+          <h3>Global citizenship</h3>
+          <p class="globalMain">
+            Read about our commitment to making a <br />positive impact in the
+            cities we serve.
+          </p>
+          <p class="globalP">See our partnerships</p>
+        </div>
+      </div>
+      <div class="uberTags">
+        <h1>There's more to love in the apps</h1>
+        <div class="logoBox">
+          <div class="logoLeft">
+            <img src="/uber img/logo 1.webp" alt="" class="uberLeft" />
+            <div class="logoLeftContent">
+              <h2 class="leftLogoP">Download the Driver app</h2>
+              <div class="icon">
+                <img
+                  src="/uber img/icons8-arrow-30.png"
+                  alt=""
+                  class="newarrow"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="logoRight">
+            <img src="/uber img/logo 2.webp" alt="" class="uberRight" />
+
+            <div class="logoRightContent">
+              <div class="rightLogoP">
+                <h2>Download the Uber app</h2>
+                <div class="icons-arrow">
+                  <img
+                    src="/uber img/icons8-arrow-30.png"
+                    alt=""
+                    class="arrow"
+                    style="margin-top: 20px"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <h2>Uber</h2>
+        <h4 class="visit">Visit Help Center</h4>
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Products</th>
+            <th>Global Citizenship</th>
+            <th>Travel</th>
+          </tr>
+          <tr>
+            <td>About us</td>
+            <td>Ride</td>
+            <td>Safety</td>
+            <td>Airports</td>
+          </tr>
+
+          <tr>
+            <td>Our Offerings</td>
+            <td>Drive</td>
+            <td>Diversity and Inclusion</td>
+            <td>Cities</td>
+          </tr>
+          <tr>
+            <td>Newsroom</td>
+            <td>Deliver</td>
+            <td>Sustainability</td>
+          </tr>
+          <tr>
+            <td>Investors</td>
+            <td>Eat</td>
+          </tr>
+          <tr>
+            <td>Blog</td>
+            <td>Uber for Business</td>
+          </tr>
+          <tr>
+            <td>Carriers</td>
+            <td>Uber freight</td>
+          </tr>
+          <tr>
+            <td>AI</td>
+          </tr>
+          <tr>
+            <td>Gift cards</td>
+          </tr>
+        </table>
+      </footer>
+    </div>
+    <script src="uber.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>
+      Question:Write a JavaScript program to calculate the factorial
+       of a number.
+    </h2>
+    <input type="number" name="" id="num" />
+    <button onclick="get()">Check</button>
+    <script>
+      function get() {
+        let x = document.getElementById("num").value;
+        product = 1;
+        for (a = x; a >= 1; a--) {
+          product = product * a;
+        }
+
+        console.log(product);   `
+      }
+    </script>
+  </body>
+</html>
